@@ -87,14 +87,16 @@ const GuiaMaeNinja = () => {
                   R$ 67,00
                 </span>
               </div>
-              <Button 
-                size="lg" 
-                className="w-full text-lg py-6 rounded-xl shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transition-all duration-300 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 border-0 group text-slate-950 font-bold"
-              >
-                <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
-                Comprar Agora
-                <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
-              </Button>
+              <a href="https://pay.kirvano.com/2e5bf977-fda2-4ae5-904f-f8e8588a40d2" target="_blank" rel="noopener noreferrer" className="block">
+                <Button 
+                  size="lg" 
+                  className="w-full text-lg py-6 rounded-xl shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transition-all duration-300 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 border-0 group text-slate-950 font-bold"
+                >
+                  <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
+                  Comprar Agora
+                  <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
+                </Button>
+              </a>
             </Card>
 
             <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/30 text-center">

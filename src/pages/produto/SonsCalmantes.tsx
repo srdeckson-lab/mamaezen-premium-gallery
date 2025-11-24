@@ -117,14 +117,16 @@ const SonsCalmantes = () => {
                   R$ 59,00
                 </span>
               </div>
-              <Button 
-                size="lg" 
-                className="w-full text-lg py-6 rounded-xl shadow-elevated hover:shadow-hover transition-all duration-300 bg-gradient-primary border-0 group"
-              >
-                <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
-                Comprar Agora
-                <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
-              </Button>
+              <a href="https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054" target="_blank" rel="noopener noreferrer" className="block">
+                <Button 
+                  size="lg" 
+                  className="w-full text-lg py-6 rounded-xl shadow-elevated hover:shadow-hover transition-all duration-300 bg-gradient-primary border-0 group"
+                >
+                  <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
+                  Comprar Agora
+                  <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
+                </Button>
+              </a>
             </Card>
 
             <div className="bg-accent/10 rounded-xl p-4 border border-accent/20 text-center">
