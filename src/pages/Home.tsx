@@ -7,6 +7,7 @@ import euOdeioSerMae from "@/assets/eu-odeio-ser-mae.png";
 import sonsCalmantes from "@/assets/sons-calmantes.jpg";
 import cinemaMamae from "@/assets/cinema-mamae.jpg";
 import FixedCTA from "@/components/FixedCTA";
+import heroImage from "@/assets/hero-image.png";
 
 const Home = () => {
   const products = [
@@ -43,32 +44,44 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900">
       <FixedCTA />
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-4">
+      <section className="relative overflow-hidden py-12 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 to-rose-500/20" />
         <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-pink-400/20 px-6 py-2 rounded-full mb-6 border border-pink-400/40">
-              <Crown className="w-5 h-5 text-pink-300" />
-              <span className="text-sm font-semibold text-pink-200">Área Premium MAMAEZEN</span>
+          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+            {/* Hero Image */}
+            <div className="flex justify-center lg:justify-end order-2 lg:order-1">
+              <img 
+                src={heroImage} 
+                alt="Maternidade Real - MAMAEZEN"
+                className="w-full max-w-md rounded-3xl shadow-2xl shadow-pink-500/30 border-2 border-pink-400/30 transform hover:scale-105 transition-transform duration-500"
+              />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-300 via-pink-200 to-rose-300 bg-clip-text text-transparent leading-tight">
-              Sua Jornada Premium<br />Começa Aqui
-            </h1>
-            <p className="text-xl md:text-2xl text-pink-100 mb-8 leading-relaxed">
-              Recursos exclusivos para mães que querem tranquilidade,<br />
-              conhecimento e momentos especiais
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-2xl mx-auto">
-              <Link to="/combo-vitalicio" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full text-lg px-8 py-6 rounded-full shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-all duration-300 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 border-0 group text-white font-bold">
-                  <Gift className="mr-2 group-hover:rotate-12 transition-transform duration-300" />
-                  Ver Combo Vitalício
-                  <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
+            
+            {/* Hero Content */}
+            <div className="text-center lg:text-left order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 bg-pink-400/20 px-6 py-2 rounded-full mb-6 border border-pink-400/40">
+                <Crown className="w-5 h-5 text-pink-300" />
+                <span className="text-sm font-semibold text-pink-200">Área Premium MAMAEZEN</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-300 via-pink-200 to-rose-300 bg-clip-text text-transparent leading-tight">
+                Sua Jornada Premium<br />Começa Aqui
+              </h1>
+              <p className="text-lg md:text-xl text-pink-100 mb-8 leading-relaxed">
+                Recursos exclusivos para mães que querem tranquilidade,
+                conhecimento e momentos especiais
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                <Link to="/combo-vitalicio" className="w-full sm:w-auto">
+                  <Button size="lg" className="w-full text-lg px-8 py-6 rounded-full shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-all duration-300 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 border-0 group text-white font-bold">
+                    <Gift className="mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                    Ver Combo Vitalício
+                    <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
+                  </Button>
+                </Link>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full border-2 border-pink-400/40 hover:border-pink-400 hover:bg-pink-400/10 transition-all duration-300 text-pink-100">
+                  Explorar Produtos
                 </Button>
-              </Link>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full border-2 border-pink-400/40 hover:border-pink-400 hover:bg-pink-400/10 transition-all duration-300 text-pink-100">
-                Explorar Produtos
-              </Button>
+              </div>
             </div>
           </div>
         </div>

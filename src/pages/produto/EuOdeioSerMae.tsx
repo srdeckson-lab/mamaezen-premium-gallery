@@ -87,14 +87,16 @@ const EuOdeioSerMae = () => {
                   R$ 49,00
                 </span>
               </div>
-              <Button 
-                size="lg" 
-                className="w-full text-lg py-6 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold"
-              >
-                <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
-                Comprar Agora
-                <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
-              </Button>
+              <a href="https://pay.kirvano.com/f4879641-b6b4-452b-b2f9-0e60b36c6aaf" target="_blank" rel="noopener noreferrer" className="block">
+                <Button 
+                  size="lg" 
+                  className="w-full text-lg py-6 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold"
+                >
+                  <Download className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
+                  Comprar Agora
+                  <Sparkles className="ml-2 group-hover:scale-125 transition-transform duration-300" />
+                </Button>
+              </a>
             </Card>
 
             <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/30 text-center">

@@ -150,16 +150,18 @@ const ComboVitalicio = () => {
                 </div>
               </div>
 
-              <Button 
-                size="lg" 
-                className="w-full max-w-md h-auto py-5 px-8 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold mb-6"
-              >
-                <span className="flex items-center justify-center gap-3 w-full text-lg">
-                  <Sparkles className="w-5 h-5 flex-shrink-0 group-hover:rotate-180 transition-transform duration-500" />
-                  <span>Garantir Acesso Vitalício</span>
-                  <Crown className="w-5 h-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                </span>
-              </Button>
+              <a href="https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054" target="_blank" rel="noopener noreferrer" className="block w-full">
+                <Button 
+                  size="lg" 
+                  className="w-full max-w-md h-auto py-5 px-8 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold mb-6"
+                >
+                  <span className="flex items-center justify-center gap-3 w-full text-lg">
+                    <Sparkles className="w-5 h-5 flex-shrink-0 group-hover:rotate-180 transition-transform duration-500" />
+                    <span>Garantir Acesso Vitalício</span>
+                    <Crown className="w-5 h-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                  </span>
+                </Button>
+              </a>
 
               <div className="flex items-center justify-center gap-2 text-sm text-slate-400">
                 <Star className="w-4 h-4 fill-red-500 text-red-500" />
