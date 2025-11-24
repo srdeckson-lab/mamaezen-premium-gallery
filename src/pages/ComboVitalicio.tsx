@@ -152,11 +152,11 @@ const ComboVitalicio = () => {
 
               <Button 
                 size="lg" 
-                className="w-full max-w-md h-auto min-h-[60px] text-lg px-6 py-4 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold mb-6"
+                className="w-full max-w-md h-auto py-5 px-8 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold mb-6"
               >
-                <span className="flex items-center justify-center gap-3 w-full">
+                <span className="flex items-center justify-center gap-3 w-full text-lg">
                   <Sparkles className="w-5 h-5 flex-shrink-0 group-hover:rotate-180 transition-transform duration-500" />
-                  <span className="whitespace-normal leading-tight">Garantir Acesso Vitalício</span>
+                  <span>Garantir Acesso Vitalício</span>
                   <Crown className="w-5 h-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
                 </span>
               </Button>

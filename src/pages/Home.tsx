@@ -6,6 +6,7 @@ import guiaMaeNinja from "@/assets/guia-mae-ninja.png";
 import euOdeioSerMae from "@/assets/eu-odeio-ser-mae.png";
 import sonsCalmantes from "@/assets/sons-calmantes.jpg";
 import cinemaMamae from "@/assets/cinema-mamae.jpg";
+import FixedCTA from "@/components/FixedCTA";
 
 const Home = () => {
   const products = [
@@ -40,6 +41,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-900 via-pink-800 to-rose-900">
+      <FixedCTA />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 to-rose-500/20" />
