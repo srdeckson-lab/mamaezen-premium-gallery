@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
@@ -14,6 +14,53 @@
     <meta name="apple-mobile-web-app-title" content="MAMAEZEN" />
     <link rel="apple-touch-icon" href="/pwa-192x192.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17554379898"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'AW-17554379898');
+
+      // Eventos personalizados
+      window.beginCheckout = function() {
+        gtag('event', 'begin_checkout');
+      };
+
+      window.purchaseApproved = function(valor, transacao) {
+        gtag('event', 'purchase', {
+          value: valor,
+          currency: 'BRL',
+          transaction_id: transacao
+        });
+      };
+
+      window.viewUpsell = function() {
+        gtag('event', 'view_upsell');
+      };
+
+      window.acceptUpsell = function() {
+        gtag('event', 'accept_upsell');
+      };
+
+      window.rejectUpsell = function() {
+        gtag('event', 'reject_upsell');
+      };
+
+      window.signupEvent = function() {
+        gtag('event', 'signup');
+      };
+
+      window.loginEvent = function() {
+        gtag('event', 'login');
+      };
+
+      // Evento PWA instalado
+      window.addEventListener('appinstalled', function() {
+        gtag('event', 'pwa_installed');
+      });
+    </script>
 
     
     
