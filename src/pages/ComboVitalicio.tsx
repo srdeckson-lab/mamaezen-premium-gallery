@@ -8,6 +8,7 @@ import guiaMaeNinja from "@/assets/guia-mae-ninja.png";
 import sonsCalmantes from "@/assets/sons-calmantes.jpg";
 import UrgencyBar from "@/components/UrgencyBar";
 import SocialProofNotifications from "@/components/SocialProofNotifications";
+import { analytics } from "@/lib/analytics";
 
 const ComboVitalicio = () => {
   const benefits = [
@@ -155,7 +156,8 @@ const ComboVitalicio = () => {
 
               <a href="https://pay.kirvano.com/ffe6e704-5057-4d62-8658-909d09cbb054" target="_blank" rel="noopener noreferrer" className="block w-full">
                 <Button 
-                  size="lg" 
+                  size="lg"
+                  onClick={() => analytics.beginCheckout()}
                   className="w-full max-w-md h-auto py-6 px-8 rounded-xl shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold mb-6 text-lg"
                 >
                   Quero Tudo Agora

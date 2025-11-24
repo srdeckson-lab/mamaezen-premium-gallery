@@ -9,6 +9,7 @@ import cinemaMamae from "@/assets/cinema-mamae.jpg";
 import FixedCTA from "@/components/FixedCTA";
 import bannerHero from "@/assets/banner-hero.png";
 import maeExausta from "@/assets/mae-exausta.png";
+import { analytics } from "@/lib/analytics";
 
 const Home = () => {
   const products = [
@@ -161,7 +162,11 @@ const Home = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link to="/combo-vitalicio" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full text-lg px-8 py-6 rounded-full shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold whitespace-nowrap">
+                  <Button 
+                    size="lg" 
+                    onClick={() => analytics.beginCheckout()}
+                    className="w-full text-lg px-8 py-6 rounded-full shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold whitespace-nowrap"
+                  >
                     Quero Parar de Sofrer
                   </Button>
                 </Link>
@@ -278,7 +283,11 @@ const Home = () => {
               </span>
             </div>
             <Link to="/combo-vitalicio" className="w-full sm:w-auto flex justify-center">
-              <Button size="lg" className="w-full sm:w-auto text-xl px-12 py-7 rounded-full shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold">
+              <Button 
+                size="lg"
+                onClick={() => analytics.beginCheckout()}
+                className="w-full sm:w-auto text-xl px-12 py-7 rounded-full shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 border-0 group text-white font-bold"
+              >
                 Quero Tudo Agora
               </Button>
             </Link>
